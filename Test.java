@@ -11,8 +11,8 @@ public class Test {
 		SynchronousQueue<Integer> c1 = new  SynchronousQueue<Integer>();
 	    SynchronousQueue<Integer> c2 = new  SynchronousQueue<Integer>();
 	    
-	    P p=new P(Tp, n, c1);//c1 pour commm entre P et Q
-	    Q q=new Q(Tq, n, c1, c2);//c2 pour commm entre Q et R
+	    P p=new P(Tp, n, c1);
+	    Q q=new Q(Tq, n, c1, c2);
 	    R r=new R(Tr, n, c2);
 	    
 	    p.start();q.start();r.start();
